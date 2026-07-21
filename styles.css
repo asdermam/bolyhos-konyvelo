@@ -152,7 +152,7 @@ footer a:hover { color: var(--mint); }
   .menu-toggle span { display: block; width: 25px; height: 1px; background: var(--ink); transition: transform .25s ease; }
   .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(3.5px) rotate(45deg); }
   .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-3.5px) rotate(-45deg); }
-  .mobile-menu { display: grid; position: fixed; inset: 74px 0 auto; background: var(--paper); z-index: 25; padding: 2rem 1.25rem 3rem; transform: translateY(calc(-100% - 74px)); opacity: 0; visibility: hidden; pointer-events: none; transition: transform .3s ease, opacity .2s ease, visibility 0s linear .3s; border-bottom: 1px solid var(--line); }
+  .mobile-menu { display: grid; position: absolute; inset: 74px 0 auto; background: var(--paper); z-index: 25; padding: 2rem 1.25rem 3rem; transform: translateY(calc(-100% - 74px)); opacity: 0; visibility: hidden; pointer-events: none; transition: transform .3s ease, opacity .2s ease, visibility 0s linear .3s; border-bottom: 1px solid var(--line); }
   .mobile-menu.open { transform: translateY(0); opacity: 1; visibility: visible; pointer-events: auto; transition-delay: 0s; }
   .mobile-menu nav { display: grid; }
   .mobile-menu a { padding: .7rem 0; font-family: var(--serif); font-size: 1.8rem; border-bottom: 1px solid var(--line); }
